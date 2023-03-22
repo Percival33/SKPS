@@ -1,7 +1,7 @@
 import time
 import sys
 
-def wypelnienie():
+def duty_cycle_pwm():
     p = .5 # wspolczynnik wypelnienia
     freq = 1
     mul = 1000
@@ -33,7 +33,7 @@ def wypelnienie():
         time.sleep(0.001)
 
 
-def czestotliwosc():
+def frequency():
     p = .5  # wspolczynnik wypelnienia
     freq = 1
     mul = 1000
@@ -67,8 +67,8 @@ def czestotliwosc():
 
 
 if __name__ == "__main__":
-    if sys.argv[1] == "-wyp":
-        wypelnienie()
-    elif sys.argv[1] == "-cze":
-        czestotliwosc()
+    if sys.argv[1] == "-duty":
+        duty_cycle_pwm()
+    elif sys.argv[1] == "-freq":
+        frequency()
         
