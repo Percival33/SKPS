@@ -2,8 +2,8 @@ import socket
 import time
 import random
 
-HOST = '0.0.0.0'
-PORT = 8888
+HOST = 'localhost'
+PORT = 9999
 MAX_DISTANCE = 10
 
 
