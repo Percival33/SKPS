@@ -4,8 +4,8 @@ import time
 import socket
 
 MAX_DISTANCE = 10  # Set max_distance to the maximum range of your sensor
-HOST = 'localhost'
-PORT = 9999
+HOST = '10.0.2.15'
+PORT = 8888
 
 
 def recv_until(sock, suffix):

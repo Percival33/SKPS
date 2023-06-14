@@ -1,9 +1,9 @@
 import socket
 import time
-import numpy as np
+import random
 
-HOST = 'localhost'
-PORT = 9999
+HOST = '0.0.0.0'
+PORT = 8888
 MAX_DISTANCE = 10
 
 
@@ -29,7 +29,8 @@ if __name__ == "__main__":
     angle_generator = generate_angles()
 
     while True:
-        distance, angle = round(np.random.rand() * MAX_DISTANCE, 2), next(angle_generator)
+        distance = round(random.uniform(0, MAX_DISTANCE), 2)
+        angle = next(angle_generator)
 
         data = f"{distance},{angle}\n"
         print(f"Sending: {data}")
