@@ -28,6 +28,8 @@ if __name__ == "__main__":
 
     fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
     ax.set_rmax(MAX_DISTANCE + 3)
+    fig.canvas.set_window_title('ToF Sensor')
+    plt.title('ToF Sensor')
     plt.show(block=False)
 
     while True:
